@@ -1,0 +1,93 @@
+/* Tambahan styling sederhana */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f1eff1;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Mengatur tinggi carousel menjadi 100% dari layar */
+.carousel {
+    height: 100vh;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh; /* Menyesuaikan gambar dengan tinggi layar */
+    object-fit: cover;
+}
+
+/* Navbar transparan di atas slideshow */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparansi */
+}
+
+.nav-link {
+    color: #000;
+}
+
+/* Judul Wisata Religi di tengah carousel dengan background transparan */
+.carousel-caption-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Font elegan */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Efek shadow pada teks */
+    z-index: 20; /* Pastikan judul berada di atas carousel */
+}
+
+header {
+    height: 100vh; /* Membuat tinggi header 100% dari viewport */
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery h2, #about h2, #contact h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.2s; /* Animasi ketika hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Besarkan kartu saat dihover */
+}
+
+.btn-primary {
+    background-color: #969390; /* Warna tombol yang sesuai */
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #969390; /* Warna tombol untuk About */
+    border: none;
+}
+.card {
+    height: 400px; /* Set tinggi tetap untuk kartu */
+    overflow: hidden; /* Menghindari gambar yang meluap dari kartu */
+}
+
+.card img {
+    width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+    height: 200px; /* Set tinggi gambar */
+    object-fit: cover;
+}
+.medium-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
